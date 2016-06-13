@@ -13,8 +13,9 @@ use Mix.Config
 # which you typically run after static files are built.
 config :deploy_test, DeployTest.Endpoint,
   http: [port: {:system, "PORT"}],
-  url: [host: "example.com", port: 80],
-  cache_static_manifest: "priv/static/manifest.json"
+  url: [host: "192.241.196.167", port: 80],
+  cache_static_manifest: "priv/static/manifest.json",
+  server: true
 
 # Do not print debug messages in production
 config :logger, level: :info
