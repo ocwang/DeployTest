@@ -14,6 +14,7 @@ use Mix.Config
 config :deploy_test, DeployTest.Endpoint,
   http: [port: {:system, "PORT"}],
   url: [host: "192.241.196.167", port: 80],
+  root: ".",
   cache_static_manifest: "priv/static/manifest.json",
   server: true
 
